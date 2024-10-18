@@ -144,4 +144,8 @@ Feedstock Maintainers
 =====================
 
 * [@camposandro](https://github.com/camposandro/)
+* [@delucchi-cmu](https://github.com/delucchi-cmu/)
+* [@drewoldag](https://github.com/drewoldag/)
+* [@jeremykubica](https://github.com/jeremykubica/)
+* [@mjuric](https://github.com/mjuric/)
 
