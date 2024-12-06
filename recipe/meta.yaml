@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.9
     - aiohttp
-    - astropy <6.1
+    - astropy-base <6.1
     - fsspec >=2023.10.0
     - healpy
     - jproperties
