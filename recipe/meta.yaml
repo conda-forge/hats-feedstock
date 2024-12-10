@@ -1,5 +1,5 @@
 {% set name = "hats" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/astronomy-commons/hats/archive/v{{ version }}.tar.gz
-  sha256: a03f04bc509e53eeba73cad37c21e1cd2369b1c326a11d6e9ab93b16fa0d21e3
+  sha256: 9c7f05ee15055823fae816487afd9f394bfc5b67917460a02cef0acac7ebe85b
 
 build:
   noarch: python
@@ -16,24 +16,24 @@ build:
 
 requirements:
   host:
-    - python >=3.9,<3.12
+    - python >=3.10,<3.12
     - setuptools >=62
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.9
+    - python >=3.10
     - aiohttp
     - astropy <6.1
     - fsspec >=2023.10.0
-    - healpy
     - jproperties
     - matplotlib-base >=3.3,<3.9
-    - mocpy
+    - mocpy >=0.17.1
     - numba >=0.58
     - numpy <3
     - pandas
     - pyarrow >=14.0.1
     - pydantic
+    - scipy
     - typing-extensions >=4.3.0
     - universal_pathlib
 
