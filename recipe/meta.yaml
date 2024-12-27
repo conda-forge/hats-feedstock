@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "hats" %}
 {% set version = "0.4.5" %}
 
@@ -12,16 +13,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 2
 
 requirements:
   host:
-    - python >=3.10,<3.12
+    - python {{ python_min }}
     - setuptools >=62
     - setuptools-scm >=6.2
     - pip
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - aiohttp
     - astropy-base <6.1
     - fsspec >=2023.10.0
@@ -48,6 +49,7 @@ test:
     - pytest
     - pytest-mock
     - pytest-timeout
+    - python {{ python_min }}
   source_files:
     - tests
 
