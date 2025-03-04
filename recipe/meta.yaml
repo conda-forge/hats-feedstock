@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hats" %}
-{% set version = "0.4.6" %}
+{% set version = "0.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/astronomy-commons/hats/archive/v{{ version }}.tar.gz
-  sha256: 418a8aebd0f3b1242b723ad38c8010c0a0141416052a381ff64bd0f54b828568
+  sha256: 1de23ea616faf9f2797df1b52fc9512a5744ce56d00bc7c5196905b062e16002
 
 build:
   noarch: python
