@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 2
 
 requirements:
   host:
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - aiohttp
-    - astropy-base <6.1
+    - astropy-base
     - fsspec >=2023.10.0
     - jproperties
     - matplotlib-base >=3.3,<3.9
