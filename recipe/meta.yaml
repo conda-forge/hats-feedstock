@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hats" %}
-{% set version = "0.5.1" %}
+{% set version = "0.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/astronomy-commons/hats/archive/v{{ version }}.tar.gz
-  sha256: da3dbc41c27b2f345fa8b9615e1f94c82e681a76192e704c594019abcb1a546b
+  sha256: c2490913751af760cc1094cba641e63678e4950f0a31adda5c5105de3d4abfbf
 
 build:
   noarch: python
@@ -23,20 +23,22 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - aiohttp
-    - astropy-base
+    - aiohttp >=3.8.0
+    - astropy-base >=6.1.5
+    - cdshealpix >=0.7.0
     - fsspec >=2023.10.0
-    - jproperties
-    - matplotlib-base >=3.3
+    - jproperties >=2.0.0
+    - matplotlib-base >=3.10.1
     - mocpy >=0.17.1
+    - nested-pandas >=0.4.1
     - numba >=0.58
     - numpy <3
-    - pandas
+    - pandas >=2.0
     - pyarrow >=14.0.1
-    - pydantic
-    - scipy
+    - pydantic >=2.0
+    - scipy >=1.7.2
     - typing-extensions >=4.3.0
-    - universal_pathlib
+    - universal_pathlib >=0.2.2
 
 test:
   imports:
