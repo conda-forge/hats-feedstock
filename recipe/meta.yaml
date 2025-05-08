@@ -23,20 +23,22 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - aiohttp
-    - astropy-base
+    - aiohttp >=3.8.0
+    - astropy-base >=6.1.5
+    - cdshealpix >=0.7.0
     - fsspec >=2023.10.0
-    - jproperties
-    - matplotlib-base >=3.3
+    - jproperties >=2.0.0
+    - matplotlib-base >=3.10.1
     - mocpy >=0.17.1
+    - nested-pandas >=0.4.1
     - numba >=0.58
     - numpy <3
-    - pandas
+    - pandas >=2.0
     - pyarrow >=14.0.1
-    - pydantic
-    - scipy
+    - pydantic >=2.0
+    - scipy >=1.7.2
     - typing-extensions >=4.3.0
-    - universal_pathlib
+    - universal_pathlib >=0.2.2
 
 test:
   imports:
