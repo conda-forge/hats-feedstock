@@ -63,6 +63,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - astronomy-commons/lincc-frameworks
     - camposandro
     - delucchi-cmu
     - drewoldag
