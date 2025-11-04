@@ -150,6 +150,3 @@ Feedstock Maintainers
 * [@jeremykubica](https://github.com/jeremykubica/)
 * [@mjuric](https://github.com/mjuric/)
 
-
-<!-- dummy commit to enable rerendering -->
-
