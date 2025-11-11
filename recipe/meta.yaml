@@ -28,7 +28,7 @@ requirements:
     - cdshealpix >=0.7.0
     - fsspec >=2023.10.0
     - jproperties >=2.0.0
-    - mocpy >=0.19.0
+    - mocpy >=0.18.0
     - nested-pandas >=0.4.1
     - numba >=0.58
     - numpy >=2,<3
