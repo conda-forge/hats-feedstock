@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/astronomy-commons/hats/archive/v{{ version }}.tar.gz
-  sha256: c845f62dfc15a393514ee53ba449bce9124361dc48ae50c96e0044da1d36b46e
+  sha256: a23e7671affe21b243d0ae3de57766e9cd31124d2ce645193d6beae5573935c8
 
 build:
   noarch: python
