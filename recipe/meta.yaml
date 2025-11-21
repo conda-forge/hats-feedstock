@@ -1,6 +1,6 @@
 {% set python_min = "3.10" %}
 {% set name = "hats" %}
-{% set version = "0.7.1" %}
+{% set version = "0.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/astronomy-commons/hats/archive/v{{ version }}.tar.gz
-  sha256: ad361773e43e5ec5c6d09a4a79463c42affbd34dd473fb22efdde0b7e9e950e2
+  sha256: a23e7671affe21b243d0ae3de57766e9cd31124d2ce645193d6beae5573935c8
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - numba >=0.58
     - numpy >=2,<3
     - pandas >=2.0
-    - pyarrow >=14.0.1,!=19.0.0,!=21.0.0
+    - pyarrow >=14.0.1,!=19.0.0
     - pydantic >=2.0
     - scipy >=1.7.2
     - typing-extensions >=4.3.0
