@@ -1,6 +1,6 @@
 {% set python_min = "3.11" %}
 {% set name = "hats" %}
-{% set version = "0.8.1" %}
+{% set version = "0.8.2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/hats-{{ version }}.tar.gz
-  sha256: 6c8d466ed5a4342daaf767b6ef79cfb214f304b7068e9c06ab944f6ff8ddf3b2
+  sha256: 2d1199b522d00c6b38144b0d550180d2ffddc774a2943302f9b4425afdf24a27
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -27,6 +27,7 @@ requirements:
     - astropy-base >=6.1.5
     - cdshealpix >=0.8.0
     - fsspec >=2023.10.0
+    - human-readable
     - jinja2
     - jproperties >=2.0.0
     - mocpy >=0.19.0
